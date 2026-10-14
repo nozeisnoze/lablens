@@ -1,0 +1,4907 @@
+{
+  "date": "2026-10-14T21:10:16.475Z",
+  "input": "Generated flat high-contrast three-line fixture, NOT a real cryovial",
+  "source": {
+    "width": 550,
+    "height": 300,
+    "roi": {
+      "x": 0,
+      "y": 0,
+      "w": 550,
+      "h": 300
+    }
+  },
+  "initialization": {
+    "tesseractMs": 297.8000000002794,
+    "paddleMs": 978.5
+  },
+  "datasetKind": "synthetic",
+  "iPhoneLatency": "UNTESTED",
+  "limitations": [
+    "PaddleOCR PP-OCRv4 is independent of the Tesseract baselines; this comparison alone does not establish a stronger engine on real cryovials.",
+    "Engine confidence is not an accuracy probability.",
+    "No character accuracy score without a human-verified visible-only transcript.",
+    "Boxes are normalized in each rotated ROI; variant images accompany results.",
+    "Do not fill occluded glyphs from an expected sample ID."
+  ],
+  "results": [
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 258,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06357142857142853,
+            "y": 0.42277486910994766,
+            "w": 0.2964285714285715,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753923
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.40841632878006534,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5055177210040808,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 152.73929099999987,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.303116,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.255394,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95.834602,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.303116,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.255394,
+          "box": {
+            "x": 0.06357142857142853,
+            "y": 0.42277486910994766,
+            "w": 0.2964285714285715,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95.834602,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753923
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.40841632878006534,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5055177210040808,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 124.70000000018626,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06357142857142853,
+            "y": 0.42277486910994766,
+            "w": 0.2964285714285715,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753923
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.40841632878006534,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5055177210040808,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 141.8555409999999,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.27298,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.71254,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95.834602,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.27298,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.71254,
+          "box": {
+            "x": 0.06357142857142853,
+            "y": 0.42277486910994766,
+            "w": 0.2964285714285715,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95.834602,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753923
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.40841632878006534,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5055177210040808,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 136.39999999990687,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 95,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 84,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 95,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2980706608229899,
+            "h": 0.149865954710173
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 84,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6530795929141745,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 149.16820499999994,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.692429,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.353645,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 94.867161,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.692429,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.353645,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2980706608229899,
+            "h": 0.149865954710173
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 94.867161,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 1,
+        "characterErrorRate": 0.05263157894736842,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6530795929141745,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 9",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 1,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 122.6999999997206,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 95,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 84,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 95,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2980706608229899,
+            "h": 0.149865954710173
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 84,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6530795929141745,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 145.77881500000058,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.702599,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89.981186,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 94.867161,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.702599,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89.981186,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2980706608229899,
+            "h": 0.149865954710173
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 94.867161,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 1,
+        "characterErrorRate": 0.05263157894736842,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6530795929141745,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 9",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 1,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 125.29999999981374,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.0664414993736622,
+            "y": 0.10975179997654683,
+            "w": 0.11933294282508011,
+            "h": 0.11835398558187785
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916254354179081,
+            "w": 0.3392522594859211,
+            "h": 0.1720719541078113
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4615532481883197,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7315263060806102,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 152.33926900000006,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.655807,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.14817,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.2420615,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.655807,
+          "box": {
+            "x": 0.0664414993736622,
+            "y": 0.10975179997654683,
+            "w": 0.11933294282508011,
+            "h": 0.11835398558187785
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.14817,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.2420615,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916254354179081,
+            "w": 0.3392522594859211,
+            "h": 0.1720719541078113
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4615532481883197,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7315263060806102,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 124.70000000018626,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.0664414993736622,
+            "y": 0.10975179997654683,
+            "w": 0.11933294282508011,
+            "h": 0.11835398558187785
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916254354179081,
+            "w": 0.3392522594859211,
+            "h": 0.1720719541078113
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4615532481883197,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7315263060806102,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 148.57273700000042,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.465126,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.118912,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.2420615,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.465126,
+          "box": {
+            "x": 0.0664414993736622,
+            "y": 0.10975179997654683,
+            "w": 0.11933294282508011,
+            "h": 0.11835398558187785
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.118912,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.2420615,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916254354179081,
+            "w": 0.3392522594859211,
+            "h": 0.1720719541078113
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4615532481883197,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7315263060806102,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 121.10000000009313,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.0642857142857143,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.1191099476439792
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.4074321930480651,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5000229631670806,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 152.20614299999943,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.380821,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.246162,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.591476,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.380821,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.246162,
+          "box": {
+            "x": 0.0642857142857143,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.591476,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.1191099476439792
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.4074321930480651,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5000229631670806,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 120.5,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.0642857142857143,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.1191099476439792
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.4074321930480651,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5000229631670806,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 140.77466599999934,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.205452,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.580589,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.591476,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.205452,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.11649214659685862,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.580589,
+          "box": {
+            "x": 0.0642857142857143,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633507
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.591476,
+          "box": {
+            "x": 0.0692857142857143,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.1191099476439792
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.3787684358210998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.4074321930480651,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5000229631670806,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 116.29999999981374,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 76,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2973573540124509,
+            "h": 0.1497974195293788
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 76,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6512187764495486,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 146.4880239999984,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.565285,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 90.624237,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 95.362526,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.565285,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 90.624237,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2973573540124509,
+            "h": 0.1497974195293788
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 95.362526,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 1,
+        "characterErrorRate": 0.05263157894736842,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6512187764495486,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 9",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 1,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 120.10000000009313,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 76,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2973573540124509,
+            "h": 0.1497974195293788
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 76,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6512187764495486,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 142.78535200000078,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.427368,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.942413,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 95.362526,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.427368,
+          "box": {
+            "x": 0.0668022290052148,
+            "y": 0.11133051241591588,
+            "w": 0.11997151956958914,
+            "h": 0.11580830732090641
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.942413,
+          "box": {
+            "x": 0.06391472589608749,
+            "y": 0.3955209522938707,
+            "w": 0.2973573540124509,
+            "h": 0.1497974195293788
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 95.362526,
+          "box": {
+            "x": 0.06662158217222719,
+            "y": 0.6920236341061267,
+            "w": 0.33899070425481653,
+            "h": 0.16292220706163074
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 1,
+        "characterErrorRate": 0.05263157894736842,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4540424381722587,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6512187764495486,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 9",
+            "omitted": false,
+            "iou": 0.6920941567740758,
+            "characterErrors": 1,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 120.8000000002794,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.06719217121721614,
+            "y": 0.1111274418782241,
+            "w": 0.11786896417098718,
+            "h": 0.11690980849940616
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916939705987024,
+            "w": 0.33853895267538225,
+            "h": 0.17200341892701698
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4503280401716822,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7296974599014707,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 142.92086000000018,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.166382,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 90.632263,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.60638449999999,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.166382,
+          "box": {
+            "x": 0.06719217121721614,
+            "y": 0.1111274418782241,
+            "w": 0.11786896417098718,
+            "h": 0.11690980849940616
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 90.632263,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.60638449999999,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916939705987024,
+            "w": 0.33853895267538225,
+            "h": 0.17200341892701698
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4503280401716822,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7296974599014707,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 119.1999999997206,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.06719217121721614,
+            "y": 0.1111274418782241,
+            "w": 0.11786896417098718,
+            "h": 0.11690980849940616
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916939705987024,
+            "w": 0.33853895267538225,
+            "h": 0.17200341892701698
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4503280401716822,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7296974599014707,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 144.02201200000127,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.630424,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.092934,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.60638449999999,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "confidence": 96.630424,
+          "box": {
+            "x": 0.06719217121721614,
+            "y": 0.1111274418782241,
+            "w": 0.11786896417098718,
+            "h": 0.11690980849940616
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.092934,
+          "box": {
+            "x": 0.06155735763289062,
+            "y": 0.3970318620963121,
+            "w": 0.29938517934502296,
+            "h": 0.14608170490911293
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.60638449999999,
+          "box": {
+            "x": 0.06651005110760491,
+            "y": 0.6916939705987024,
+            "w": 0.33853895267538225,
+            "h": 0.17200341892701698
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.4503280401716822,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.6393961611585012,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.7296974599014707,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "PaddleOCR PP-OCRv4 / ONNX WASM",
+      "variant": "original",
+      "degrees": 0,
+      "psm": null,
+      "elapsedMs": 549.5999999996275,
+      "raw": "Kim\nAB12345\nPassage 5",
+      "lines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.80500936508179
+            },
+            {
+              "text": "i",
+              "confidence": 99.9954104423523
+            },
+            {
+              "text": "m",
+              "confidence": 99.98206496238708
+            }
+          ],
+          "confidence": 99.92749492327373,
+          "box": {
+            "x": 0.06372111344537815,
+            "y": 0.11428725902125556,
+            "w": 0.12776610644257705,
+            "h": 0.11701371725160653
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.89359974861145
+            },
+            {
+              "text": "B",
+              "confidence": 99.86746311187744
+            },
+            {
+              "text": "1",
+              "confidence": 99.87468719482422
+            },
+            {
+              "text": "2",
+              "confidence": 99.92842078208923
+            },
+            {
+              "text": "3",
+              "confidence": 99.91939663887024
+            },
+            {
+              "text": "4",
+              "confidence": 99.98468160629272
+            },
+            {
+              "text": "5",
+              "confidence": 99.95951056480408
+            }
+          ],
+          "confidence": 99.91825137819562,
+          "box": {
+            "x": 0.06857766544117647,
+            "y": 0.4261664684256056,
+            "w": 0.2920113357843137,
+            "h": 0.09619647491349487
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.20951724052429
+            },
+            {
+              "text": "a",
+              "confidence": 99.99345541000366
+            },
+            {
+              "text": "s",
+              "confidence": 99.9751627445221
+            },
+            {
+              "text": "s",
+              "confidence": 99.98286962509155
+            },
+            {
+              "text": "a",
+              "confidence": 99.99090433120728
+            },
+            {
+              "text": "g",
+              "confidence": 99.99363422393799
+            },
+            {
+              "text": "e",
+              "confidence": 99.98946189880371
+            },
+            {
+              "text": " ",
+              "confidence": 99.56804513931274
+            },
+            {
+              "text": "5",
+              "confidence": 99.99505281448364
+            }
+          ],
+          "confidence": 99.85534482532077,
+          "box": {
+            "x": 0.06311435758513932,
+            "y": 0.7179959251502458,
+            "w": 0.34772961816305475,
+            "h": 0.13018462028774358
+          }
+        }
+      ],
+      "warnings": [],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.80500936508179
+            },
+            {
+              "text": "i",
+              "confidence": 99.9954104423523
+            },
+            {
+              "text": "m",
+              "confidence": 99.98206496238708
+            }
+          ],
+          "confidence": 99.92749492327373,
+          "box": {
+            "x": 0.06372111344537813,
+            "y": 0.11428725902125558,
+            "w": 0.12776610644257708,
+            "h": 0.11701371725160647
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.89359974861145
+            },
+            {
+              "text": "B",
+              "confidence": 99.86746311187744
+            },
+            {
+              "text": "1",
+              "confidence": 99.87468719482422
+            },
+            {
+              "text": "2",
+              "confidence": 99.92842078208923
+            },
+            {
+              "text": "3",
+              "confidence": 99.91939663887024
+            },
+            {
+              "text": "4",
+              "confidence": 99.98468160629272
+            },
+            {
+              "text": "5",
+              "confidence": 99.95951056480408
+            }
+          ],
+          "confidence": 99.91825137819562,
+          "box": {
+            "x": 0.0685776654411765,
+            "y": 0.4261664684256056,
+            "w": 0.2920113357843137,
+            "h": 0.09619647491349487
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.20951724052429
+            },
+            {
+              "text": "a",
+              "confidence": 99.99345541000366
+            },
+            {
+              "text": "s",
+              "confidence": 99.9751627445221
+            },
+            {
+              "text": "s",
+              "confidence": 99.98286962509155
+            },
+            {
+              "text": "a",
+              "confidence": 99.99090433120728
+            },
+            {
+              "text": "g",
+              "confidence": 99.99363422393799
+            },
+            {
+              "text": "e",
+              "confidence": 99.98946189880371
+            },
+            {
+              "text": " ",
+              "confidence": 99.56804513931274
+            },
+            {
+              "text": "5",
+              "confidence": 99.99505281448364
+            }
+          ],
+          "confidence": 99.85534482532077,
+          "box": {
+            "x": 0.06311435758513932,
+            "y": 0.7179959251502459,
+            "w": 0.34772961816305475,
+            "h": 0.13018462028774336
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.48857474031406434,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.4106792563922786,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5672813070596399,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "PaddleOCR PP-OCRv4 / ONNX WASM",
+      "variant": "original",
+      "degrees": -3,
+      "psm": null,
+      "elapsedMs": 612.4000000003725,
+      "raw": "Kim\nAB12345\nPassage 5",
+      "lines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.81391429901123
+            },
+            {
+              "text": "i",
+              "confidence": 99.99109506607056
+            },
+            {
+              "text": "m",
+              "confidence": 99.9695897102356
+            }
+          ],
+          "confidence": 99.92486635843913,
+          "box": {
+            "x": 0.055437853107344635,
+            "y": 0.15114032901296112,
+            "w": 0.12662429378531073,
+            "h": 0.11683698903290127
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.94022846221924
+            },
+            {
+              "text": "B",
+              "confidence": 99.96380805969238
+            },
+            {
+              "text": "1",
+              "confidence": 99.9691367149353
+            },
+            {
+              "text": "2",
+              "confidence": 99.98793601989746
+            },
+            {
+              "text": "3",
+              "confidence": 99.97058510780334
+            },
+            {
+              "text": "4",
+              "confidence": 99.99061822891235
+            },
+            {
+              "text": "5",
+              "confidence": 99.9806821346283
+            }
+          ],
+          "confidence": 99.97185638972691,
+          "box": {
+            "x": 0.062068134638196916,
+            "y": 0.42938494347917106,
+            "w": 0.3039887307236062,
+            "h": 0.14490658362989323
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.88228678703308
+            },
+            {
+              "text": "a",
+              "confidence": 99.99634027481079
+            },
+            {
+              "text": "s",
+              "confidence": 99.98750686645508
+            },
+            {
+              "text": "s",
+              "confidence": 99.99383687973022
+            },
+            {
+              "text": "a",
+              "confidence": 99.99327659606934
+            },
+            {
+              "text": "g",
+              "confidence": 99.99269247055054
+            },
+            {
+              "text": "e",
+              "confidence": 99.9897837638855
+            },
+            {
+              "text": " ",
+              "confidence": 89.3165647983551
+            },
+            {
+              "text": "5",
+              "confidence": 99.98175501823425
+            }
+          ],
+          "confidence": 98.79267149501376,
+          "box": {
+            "x": 0.06540811803444782,
+            "y": 0.7202055024137314,
+            "w": 0.35564209726443774,
+            "h": 0.16253017164312544
+          }
+        }
+      ],
+      "warnings": [],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.81391429901123
+            },
+            {
+              "text": "i",
+              "confidence": 99.99109506607056
+            },
+            {
+              "text": "m",
+              "confidence": 99.9695897102356
+            }
+          ],
+          "confidence": 99.92486635843913,
+          "box": {
+            "x": 0.06267063495006876,
+            "y": 0.10896302311133388,
+            "w": 0.12978609170722405,
+            "h": 0.12882637441459446
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.94022846221924
+            },
+            {
+              "text": "B",
+              "confidence": 99.96380805969238
+            },
+            {
+              "text": "1",
+              "confidence": 99.9691367149353
+            },
+            {
+              "text": "2",
+              "confidence": 99.98793601989746
+            },
+            {
+              "text": "3",
+              "confidence": 99.97058510780334
+            },
+            {
+              "text": "4",
+              "confidence": 99.99061822891235
+            },
+            {
+              "text": "5",
+              "confidence": 99.9806821346283
+            }
+          ],
+          "confidence": 99.97185638972691,
+          "box": {
+            "x": 0.06054751334208463,
+            "y": 0.38746248356449886,
+            "w": 0.3077087563441493,
+            "h": 0.1738754858606093
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.88228678703308
+            },
+            {
+              "text": "a",
+              "confidence": 99.99634027481079
+            },
+            {
+              "text": "s",
+              "confidence": 99.98750686645508
+            },
+            {
+              "text": "s",
+              "confidence": 99.99383687973022
+            },
+            {
+              "text": "a",
+              "confidence": 99.99327659606934
+            },
+            {
+              "text": "g",
+              "confidence": 99.99269247055054
+            },
+            {
+              "text": "e",
+              "confidence": 99.9897837638855
+            },
+            {
+              "text": " ",
+              "confidence": 89.3165647983551
+            },
+            {
+              "text": "5",
+              "confidence": 99.98175501823425
+            }
+          ],
+          "confidence": 98.79267149501376,
+          "box": {
+            "x": 0.05507779974641509,
+            "y": 0.678204951942661,
+            "w": 0.359794432285566,
+            "h": 0.19643102329928597
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.5464010341203182,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.7715446765371132,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.8325141879289741,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "PaddleOCR PP-OCRv4 / ONNX WASM",
+      "variant": "original",
+      "degrees": 3,
+      "psm": null,
+      "elapsedMs": 426.89999999990687,
+      "raw": "Kim\nAB12345\nPassage 5",
+      "lines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.84850287437439
+            },
+            {
+              "text": "i",
+              "confidence": 99.98512268066406
+            },
+            {
+              "text": "m",
+              "confidence": 99.96775388717651
+            }
+          ],
+          "confidence": 99.93379314740498,
+          "box": {
+            "x": 0.07297526041666667,
+            "y": 0.07547104779411765,
+            "w": 0.12800781249999998,
+            "h": 0.1266314338235294
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.92052912712097
+            },
+            {
+              "text": "B",
+              "confidence": 99.97827410697937
+            },
+            {
+              "text": "1",
+              "confidence": 99.97711777687073
+            },
+            {
+              "text": "2",
+              "confidence": 99.9921202659607
+            },
+            {
+              "text": "3",
+              "confidence": 99.97321963310242
+            },
+            {
+              "text": "4",
+              "confidence": 99.99198913574219
+            },
+            {
+              "text": "5",
+              "confidence": 99.98650550842285
+            }
+          ],
+          "confidence": 99.97425079345703,
+          "box": {
+            "x": 0.0609925176056338,
+            "y": 0.37417797224523613,
+            "w": 0.30718163145539906,
+            "h": 0.1450264084507042
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.68235492706299
+            },
+            {
+              "text": "a",
+              "confidence": 99.99145269393921
+            },
+            {
+              "text": "s",
+              "confidence": 99.98307228088379
+            },
+            {
+              "text": "s",
+              "confidence": 99.99420642852783
+            },
+            {
+              "text": "a",
+              "confidence": 99.99535083770752
+            },
+            {
+              "text": "g",
+              "confidence": 99.99438524246216
+            },
+            {
+              "text": "e",
+              "confidence": 99.98935461044312
+            },
+            {
+              "text": " ",
+              "confidence": 93.39701533317566
+            },
+            {
+              "text": "5",
+              "confidence": 99.99222755432129
+            }
+          ],
+          "confidence": 99.22437998983595,
+          "box": {
+            "x": 0.05067439209726443,
+            "y": 0.6684695154657608,
+            "w": 0.35594288247213773,
+            "h": 0.1704139102449489
+          }
+        }
+      ],
+      "warnings": [],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.84850287437439
+            },
+            {
+              "text": "i",
+              "confidence": 99.98512268066406
+            },
+            {
+              "text": "m",
+              "confidence": 99.96775388717651
+            }
+          ],
+          "confidence": 99.93379314740498,
+          "box": {
+            "x": 0.0614415037085611,
+            "y": 0.10474330079030324,
+            "w": 0.13144731524886355,
+            "h": 0.13874014384637984
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.92052912712097
+            },
+            {
+              "text": "B",
+              "confidence": 99.97827410697937
+            },
+            {
+              "text": "1",
+              "confidence": 99.97711777687073
+            },
+            {
+              "text": "2",
+              "confidence": 99.9921202659607
+            },
+            {
+              "text": "3",
+              "confidence": 99.97321963310242
+            },
+            {
+              "text": "4",
+              "confidence": 99.99198913574219
+            },
+            {
+              "text": "5",
+              "confidence": 99.98650550842285
+            }
+          ],
+          "confidence": 99.97425079345703,
+          "box": {
+            "x": 0.05800233511784364,
+            "y": 0.38699899889983913,
+            "w": 0.3109007019418637,
+            "h": 0.17430150290614432
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.68235492706299
+            },
+            {
+              "text": "a",
+              "confidence": 99.99145269393921
+            },
+            {
+              "text": "s",
+              "confidence": 99.98307228088379
+            },
+            {
+              "text": "s",
+              "confidence": 99.99420642852783
+            },
+            {
+              "text": "a",
+              "confidence": 99.99535083770752
+            },
+            {
+              "text": "g",
+              "confidence": 99.99438524246216
+            },
+            {
+              "text": "e",
+              "confidence": 99.98935461044312
+            },
+            {
+              "text": " ",
+              "confidence": 93.39701533317566
+            },
+            {
+              "text": "5",
+              "confidence": 99.99222755432129
+            }
+          ],
+          "confidence": 99.22437998983595,
+          "box": {
+            "x": 0.05609945714842202,
+            "y": 0.6771986366085361,
+            "w": 0.3603198614585903,
+            "h": 0.20433281762737765
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.5959810269884891,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.7817260204843998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.805758348134512,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "PaddleOCR PP-OCRv4 / ONNX WASM",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": null,
+      "elapsedMs": 444.89999999990687,
+      "raw": "Kim\nAB12345\nPassage 5",
+      "lines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.82845187187195
+            },
+            {
+              "text": "i",
+              "confidence": 99.99508857727051
+            },
+            {
+              "text": "m",
+              "confidence": 99.98655319213867
+            }
+          ],
+          "confidence": 99.93669788042705,
+          "box": {
+            "x": 0.06372111344537815,
+            "y": 0.11428725902125556,
+            "w": 0.12776610644257705,
+            "h": 0.11701371725160653
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.90488886833191
+            },
+            {
+              "text": "B",
+              "confidence": 99.93175268173218
+            },
+            {
+              "text": "1",
+              "confidence": 99.9256432056427
+            },
+            {
+              "text": "2",
+              "confidence": 99.96523857116699
+            },
+            {
+              "text": "3",
+              "confidence": 99.97325539588928
+            },
+            {
+              "text": "4",
+              "confidence": 99.99504089355469
+            },
+            {
+              "text": "5",
+              "confidence": 99.97710585594177
+            }
+          ],
+          "confidence": 99.95327506746564,
+          "box": {
+            "x": 0.06857766544117647,
+            "y": 0.4261664684256056,
+            "w": 0.2920113357843137,
+            "h": 0.09619647491349487
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.1453766822815
+            },
+            {
+              "text": "a",
+              "confidence": 99.99465942382812
+            },
+            {
+              "text": "s",
+              "confidence": 99.9690055847168
+            },
+            {
+              "text": "s",
+              "confidence": 99.98143315315247
+            },
+            {
+              "text": "a",
+              "confidence": 99.99120235443115
+            },
+            {
+              "text": "g",
+              "confidence": 99.9941349029541
+            },
+            {
+              "text": "e",
+              "confidence": 99.9903917312622
+            },
+            {
+              "text": " ",
+              "confidence": 99.76122379302979
+            },
+            {
+              "text": "5",
+              "confidence": 99.99579191207886
+            }
+          ],
+          "confidence": 99.8692466153039,
+          "box": {
+            "x": 0.06311435758513932,
+            "y": 0.7179959251502458,
+            "w": 0.34772961816305475,
+            "h": 0.13018462028774358
+          }
+        }
+      ],
+      "warnings": [],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.82845187187195
+            },
+            {
+              "text": "i",
+              "confidence": 99.99508857727051
+            },
+            {
+              "text": "m",
+              "confidence": 99.98655319213867
+            }
+          ],
+          "confidence": 99.93669788042705,
+          "box": {
+            "x": 0.06372111344537813,
+            "y": 0.11428725902125558,
+            "w": 0.12776610644257708,
+            "h": 0.11701371725160647
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.90488886833191
+            },
+            {
+              "text": "B",
+              "confidence": 99.93175268173218
+            },
+            {
+              "text": "1",
+              "confidence": 99.9256432056427
+            },
+            {
+              "text": "2",
+              "confidence": 99.96523857116699
+            },
+            {
+              "text": "3",
+              "confidence": 99.97325539588928
+            },
+            {
+              "text": "4",
+              "confidence": 99.99504089355469
+            },
+            {
+              "text": "5",
+              "confidence": 99.97710585594177
+            }
+          ],
+          "confidence": 99.95327506746564,
+          "box": {
+            "x": 0.0685776654411765,
+            "y": 0.4261664684256056,
+            "w": 0.2920113357843137,
+            "h": 0.09619647491349487
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.1453766822815
+            },
+            {
+              "text": "a",
+              "confidence": 99.99465942382812
+            },
+            {
+              "text": "s",
+              "confidence": 99.9690055847168
+            },
+            {
+              "text": "s",
+              "confidence": 99.98143315315247
+            },
+            {
+              "text": "a",
+              "confidence": 99.99120235443115
+            },
+            {
+              "text": "g",
+              "confidence": 99.9941349029541
+            },
+            {
+              "text": "e",
+              "confidence": 99.9903917312622
+            },
+            {
+              "text": " ",
+              "confidence": 99.76122379302979
+            },
+            {
+              "text": "5",
+              "confidence": 99.99579191207886
+            }
+          ],
+          "confidence": 99.8692466153039,
+          "box": {
+            "x": 0.06311435758513932,
+            "y": 0.7179959251502459,
+            "w": 0.34772961816305475,
+            "h": 0.13018462028774336
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.48857474031406434,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.4106792563922786,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.5672813070596399,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "PaddleOCR PP-OCRv4 / ONNX WASM",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": null,
+      "elapsedMs": 419.29999999981374,
+      "raw": "Kim\nAB12345\nPassage 5",
+      "lines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.76426959037781
+            },
+            {
+              "text": "i",
+              "confidence": 99.99045133590698
+            },
+            {
+              "text": "m",
+              "confidence": 99.96858835220337
+            }
+          ],
+          "confidence": 99.90776975949605,
+          "box": {
+            "x": 0.055437853107344635,
+            "y": 0.15114032901296112,
+            "w": 0.12662429378531073,
+            "h": 0.11683698903290127
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.9183714389801
+            },
+            {
+              "text": "B",
+              "confidence": 99.96076226234436
+            },
+            {
+              "text": "1",
+              "confidence": 99.96408224105835
+            },
+            {
+              "text": "2",
+              "confidence": 99.98512268066406
+            },
+            {
+              "text": "3",
+              "confidence": 99.96954202651978
+            },
+            {
+              "text": "4",
+              "confidence": 99.98972415924072
+            },
+            {
+              "text": "5",
+              "confidence": 99.97822642326355
+            }
+          ],
+          "confidence": 99.96654731886727,
+          "box": {
+            "x": 0.062068134638196916,
+            "y": 0.42938494347917106,
+            "w": 0.3039887307236062,
+            "h": 0.14490658362989323
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.87974166870117
+            },
+            {
+              "text": "a",
+              "confidence": 99.99704360961914
+            },
+            {
+              "text": "s",
+              "confidence": 99.9915599822998
+            },
+            {
+              "text": "s",
+              "confidence": 99.99656677246094
+            },
+            {
+              "text": "a",
+              "confidence": 99.99253749847412
+            },
+            {
+              "text": "g",
+              "confidence": 99.99123811721802
+            },
+            {
+              "text": "e",
+              "confidence": 99.99511241912842
+            },
+            {
+              "text": " ",
+              "confidence": 99.9148964881897
+            },
+            {
+              "text": "5",
+              "confidence": 99.99191761016846
+            }
+          ],
+          "confidence": 99.97229046291775,
+          "box": {
+            "x": 0.06602118267276422,
+            "y": 0.721287381187231,
+            "w": 0.35441596798780484,
+            "h": 0.15852817880200853
+          }
+        }
+      ],
+      "warnings": [],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.76426959037781
+            },
+            {
+              "text": "i",
+              "confidence": 99.99045133590698
+            },
+            {
+              "text": "m",
+              "confidence": 99.96858835220337
+            }
+          ],
+          "confidence": 99.90776975949605,
+          "box": {
+            "x": 0.06267063495006876,
+            "y": 0.10896302311133388,
+            "w": 0.12978609170722405,
+            "h": 0.12882637441459446
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.9183714389801
+            },
+            {
+              "text": "B",
+              "confidence": 99.96076226234436
+            },
+            {
+              "text": "1",
+              "confidence": 99.96408224105835
+            },
+            {
+              "text": "2",
+              "confidence": 99.98512268066406
+            },
+            {
+              "text": "3",
+              "confidence": 99.96954202651978
+            },
+            {
+              "text": "4",
+              "confidence": 99.98972415924072
+            },
+            {
+              "text": "5",
+              "confidence": 99.97822642326355
+            }
+          ],
+          "confidence": 99.96654731886727,
+          "box": {
+            "x": 0.06054751334208463,
+            "y": 0.38746248356449886,
+            "w": 0.3077087563441493,
+            "h": 0.1738754858606093
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.87974166870117
+            },
+            {
+              "text": "a",
+              "confidence": 99.99704360961914
+            },
+            {
+              "text": "s",
+              "confidence": 99.9915599822998
+            },
+            {
+              "text": "s",
+              "confidence": 99.99656677246094
+            },
+            {
+              "text": "a",
+              "confidence": 99.99253749847412
+            },
+            {
+              "text": "g",
+              "confidence": 99.99123811721802
+            },
+            {
+              "text": "e",
+              "confidence": 99.99511241912842
+            },
+            {
+              "text": " ",
+              "confidence": 99.9148964881897
+            },
+            {
+              "text": "5",
+              "confidence": 99.99191761016846
+            }
+          ],
+          "confidence": 99.97229046291775,
+          "box": {
+            "x": 0.05577338436207907,
+            "y": 0.6793441711330576,
+            "w": 0.3584557389461928,
+            "h": 0.19231686886195865
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.5464010341203182,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.7715446765371132,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.8446753359320855,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    },
+    {
+      "engine": "PaddleOCR PP-OCRv4 / ONNX WASM",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": null,
+      "elapsedMs": 423.90000000037253,
+      "raw": "Kim\nAB12345\nPassage 5",
+      "lines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.80691075325012
+            },
+            {
+              "text": "i",
+              "confidence": 99.98612403869629
+            },
+            {
+              "text": "m",
+              "confidence": 99.98154044151306
+            }
+          ],
+          "confidence": 99.92485841115315,
+          "box": {
+            "x": 0.071875,
+            "y": 0.07536764705882353,
+            "w": 0.12916666666666668,
+            "h": 0.12683823529411764
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.90373849868774
+            },
+            {
+              "text": "B",
+              "confidence": 99.97677206993103
+            },
+            {
+              "text": "1",
+              "confidence": 99.97416138648987
+            },
+            {
+              "text": "2",
+              "confidence": 99.99171495437622
+            },
+            {
+              "text": "3",
+              "confidence": 99.97478127479553
+            },
+            {
+              "text": "4",
+              "confidence": 99.99221563339233
+            },
+            {
+              "text": "5",
+              "confidence": 99.98555183410645
+            }
+          ],
+          "confidence": 99.97127652168274,
+          "box": {
+            "x": 0.0609925176056338,
+            "y": 0.37417797224523613,
+            "w": 0.30718163145539906,
+            "h": 0.1450264084507042
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.57054257392883
+            },
+            {
+              "text": "a",
+              "confidence": 99.9903678894043
+            },
+            {
+              "text": "s",
+              "confidence": 99.98069405555725
+            },
+            {
+              "text": "s",
+              "confidence": 99.9942421913147
+            },
+            {
+              "text": "a",
+              "confidence": 99.99527931213379
+            },
+            {
+              "text": "g",
+              "confidence": 99.9948501586914
+            },
+            {
+              "text": "e",
+              "confidence": 99.9890685081482
+            },
+            {
+              "text": " ",
+              "confidence": 92.42007732391357
+            },
+            {
+              "text": "5",
+              "confidence": 99.99188184738159
+            }
+          ],
+          "confidence": 99.10300042894151,
+          "box": {
+            "x": 0.05067439209726443,
+            "y": 0.6684695154657608,
+            "w": 0.35594288247213773,
+            "h": 0.1704139102449489
+          }
+        }
+      ],
+      "warnings": [],
+      "boxCoordinates": "normalized rotated crop",
+      "sourceLines": [
+        {
+          "text": "Kim",
+          "characters": [
+            {
+              "text": "K",
+              "confidence": 99.80691075325012
+            },
+            {
+              "text": "i",
+              "confidence": 99.98612403869629
+            },
+            {
+              "text": "m",
+              "confidence": 99.98154044151306
+            }
+          ],
+          "confidence": 99.92485841115315,
+          "box": {
+            "x": 0.06033979939163391,
+            "y": 0.10463441973557366,
+            "w": 0.1326104847840152,
+            "h": 0.1390578530944974
+          }
+        },
+        {
+          "text": "AB12345",
+          "characters": [
+            {
+              "text": "A",
+              "confidence": 99.90373849868774
+            },
+            {
+              "text": "B",
+              "confidence": 99.97677206993103
+            },
+            {
+              "text": "1",
+              "confidence": 99.97416138648987
+            },
+            {
+              "text": "2",
+              "confidence": 99.99171495437622
+            },
+            {
+              "text": "3",
+              "confidence": 99.97478127479553
+            },
+            {
+              "text": "4",
+              "confidence": 99.99221563339233
+            },
+            {
+              "text": "5",
+              "confidence": 99.98555183410645
+            }
+          ],
+          "confidence": 99.97127652168274,
+          "box": {
+            "x": 0.05800233511784364,
+            "y": 0.38699899889983913,
+            "w": 0.3109007019418637,
+            "h": 0.17430150290614432
+          }
+        },
+        {
+          "text": "Passage 5",
+          "characters": [
+            {
+              "text": "P",
+              "confidence": 99.57054257392883
+            },
+            {
+              "text": "a",
+              "confidence": 99.9903678894043
+            },
+            {
+              "text": "s",
+              "confidence": 99.98069405555725
+            },
+            {
+              "text": "s",
+              "confidence": 99.9942421913147
+            },
+            {
+              "text": "a",
+              "confidence": 99.99527931213379
+            },
+            {
+              "text": "g",
+              "confidence": 99.9948501586914
+            },
+            {
+              "text": "e",
+              "confidence": 99.9890685081482
+            },
+            {
+              "text": " ",
+              "confidence": 92.42007732391357
+            },
+            {
+              "text": "5",
+              "confidence": 99.99188184738159
+            }
+          ],
+          "confidence": 99.10300042894151,
+          "box": {
+            "x": 0.05609945714842202,
+            "y": 0.6771986366085361,
+            "w": 0.3603198614585903,
+            "h": 0.20433281762737765
+          }
+        }
+      ],
+      "metrics": {
+        "kind": "synthetic",
+        "omissions": 0,
+        "falsePositives": 0,
+        "scoredCharacters": 19,
+        "characterErrors": 0,
+        "characterErrorRate": 0,
+        "lines": [
+          {
+            "expected": "Kim",
+            "actual": "Kim",
+            "omitted": false,
+            "iou": 0.6026316768590085,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.08,
+              "w": 0.18,
+              "h": 0.17
+            }
+          },
+          {
+            "expected": "AB12345",
+            "actual": "AB12345",
+            "omitted": false,
+            "iou": 0.7817260204843998,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.38,
+              "w": 0.38,
+              "h": 0.18
+            }
+          },
+          {
+            "expected": "Passage 5",
+            "actual": "Passage 5",
+            "omitted": false,
+            "iou": 0.805758348134512,
+            "characterErrors": 0,
+            "box": {
+              "x": 0.05,
+              "y": 0.68,
+              "w": 0.42,
+              "h": 0.19
+            }
+          }
+        ],
+        "limits": [
+          "Ambiguous lines have detection metrics only, never a guessed transcript.",
+          "IoU threshold 0.15 establishes one-to-one physical-line matches.",
+          "Character error rate can exceed 1 and does not certify clinical correctness.",
+          "Cloud browser timing is not iPhone latency."
+        ]
+      }
+    }
+  ],
+  "realLabelAccuracy": "UNTESTED",
+  "fixtureTruth": {
+    "kind": "synthetic",
+    "localProcessingAuthorized": true,
+    "lines": [
+      {
+        "text": "Kim",
+        "box": {
+          "x": 0.05,
+          "y": 0.08,
+          "w": 0.18,
+          "h": 0.17
+        }
+      },
+      {
+        "text": "AB12345",
+        "box": {
+          "x": 0.05,
+          "y": 0.38,
+          "w": 0.38,
+          "h": 0.18
+        }
+      },
+      {
+        "text": "Passage 5",
+        "box": {
+          "x": 0.05,
+          "y": 0.68,
+          "w": 0.42,
+          "h": 0.19
+        }
+      }
+    ]
+  },
+  "summary": [
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "runs": 12,
+      "exactThreeLineMatches": 12,
+      "medianRecognitionMs": 121.89999999990687,
+      "omissions": 0,
+      "falsePositives": 0
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "runs": 12,
+      "exactThreeLineMatches": 8,
+      "medianRecognitionMs": 146.1334194999995,
+      "omissions": 0,
+      "falsePositives": 0
+    },
+    {
+      "engine": "PaddleOCR PP-OCRv4 / ONNX WASM",
+      "runs": 6,
+      "exactThreeLineMatches": 6,
+      "medianRecognitionMs": 435.89999999990687,
+      "omissions": 0,
+      "falsePositives": 0
+    }
+  ]
+}

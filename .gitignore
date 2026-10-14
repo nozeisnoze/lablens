@@ -1,0 +1,12 @@
+node_modules/
+dist/
+public/ocr/
+reference/*.jpg
+reference/*.jpeg
+reference/*.png
+reference/*.heic
+reference/*.mp4
+reference/*.mov
+benchmark-results/
+test-results/
+playwright-report/

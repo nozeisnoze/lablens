@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#102c38" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>LabLens</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <strong>LabLens</strong><span>On-device label review</span>
+      </header>
+      <p class="notice">
+        Experimental scanner. Read every line before confirming. Curved or
+        hidden characters may remain uncertain.
+      </p>
+      <section>
+        <button id="start">Start rear camera</button
+        ><button id="stop" hidden>Stop camera</button>
+        <p id="status" role="status">
+          Camera stays on your device. No images are uploaded.
+        </p>
+        <div id="stage">
+          <video id="video" playsinline muted autoplay></video
+          ><canvas
+            id="overlay"
+            aria-label="Drag a rectangle around the label"
+          ></canvas>
+        </div>
+        <p class="hint">
+          Drag around the label only. Move close, use diffuse light, hold
+          steady, and rotate gently to expose curved text. Keep the whole label
+          inside the rectangle.
+        </p>
+        <button id="reacquire" hidden>Reset label tracking</button>
+      </section>
+      <section id="review">
+        <h1>Review this label</h1>
+        <p>
+          Amber characters need checking. Agreement is consistency across
+          frames, not an accuracy probability.
+        </p>
+        <div id="evidence"></div>
+        <label
+          >Sample ID<input
+            id="sampleId"
+            autocomplete="off"
+            placeholder="Enter or copy from a label line"
+        /></label>
+        <div class="location">
+          <label>Box<input id="box" autocomplete="off" /></label
+          ><label>Position<input id="position" autocomplete="off" /></label>
+        </div>
+        <label
+          >Label lines (editable)<textarea
+            id="lines"
+            rows="4"
+            placeholder="Recognized lines appear here"
+          ></textarea>
+        </label>
+        <button id="confirm" disabled>OK · add to session</button
+        ><button id="duplicate" hidden>Add duplicate explicitly</button>
+        <p id="message" role="alert"></p>
+      </section>
+      <section>
+        <h2>Session <span id="count">0</span></h2>
+        <p>
+          Records stay in memory. Export before closing this page. Matching ID +
+          box + position prompts you; unspecified positions and distinct
+          aliquots are retained.
+        </p>
+        <div class="actions">
+          <button id="export">Download CSV</button
+          ><button id="copy">Copy CSV</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Sample ID</th>
+                <th>Box / position</th>
+                <th>Label lines</th>
+              </tr>
+            </thead>
+            <tbody id="records"></tbody>
+          </table>
+        </div>
+        <textarea
+          id="csvFallback"
+          hidden
+          readonly
+          aria-label="CSV to copy manually"
+        ></textarea>
+      </section>
+    </main>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

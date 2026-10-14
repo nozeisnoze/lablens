@@ -1,0 +1,999 @@
+{
+  "fixture": "Generated flat high-contrast text; NOT the supplied tube photograph",
+  "expected": [
+    "Kim",
+    "AB12345",
+    "Passage 5"
+  ],
+  "date": "2026-10-14T20:36:34.616Z",
+  "realPhotoOCR": "UNRUN",
+  "physicalIPhone": "UNTESTED",
+  "summaries": [
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "runs": 12,
+      "exactThreeLineMatches": 12,
+      "medianRecognitionMs": 128.35000000003492
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "runs": 12,
+      "exactThreeLineMatches": 8,
+      "medianRecognitionMs": 152.1145765000001
+    }
+  ],
+  "results": [
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 262.20000000006985,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 284.2531750000003,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.303116,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.255394,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95.834602,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 128.70000000006985,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 155.2486130000002,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.27298,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.71254,
+          "box": {
+            "x": 0.06357142857142857,
+            "y": 0.42277486910994766,
+            "w": 0.29642857142857143,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95.834602,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7225130890052356,
+            "w": 0.335,
+            "h": 0.12041884816753927
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 148.20000000006985,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 95,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 84,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 155.56475299999966,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.692429,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.353645,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 94.867161,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 119.70000000006985,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 95,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 84,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 150.32619000000022,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.702599,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89.981186,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.295,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 94.867161,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 134.90000000002328,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 153.902963,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.655807,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.14817,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.2420615,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 126.60000000009313,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "original",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 147.46413100000018,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.465126,
+          "box": {
+            "x": 0.07785714285714286,
+            "y": 0.07984293193717278,
+            "w": 0.11642857142857142,
+            "h": 0.10732984293193717
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.118912,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.2420615,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.3357142857142857,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 135.79999999993015,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 11,
+      "elapsedMs": 146.1033550000002,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.380821,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.246162,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.591476,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 129.29999999993015,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 89,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 0,
+      "psm": 6,
+      "elapsedMs": 154.71586000000025,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.205452,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.11649214659685864,
+            "w": 0.115,
+            "h": 0.10078534031413612
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.580589,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.42277486910994766,
+            "w": 0.2957142857142857,
+            "h": 0.09424083769633508
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.591476,
+          "box": {
+            "x": 0.06928571428571428,
+            "y": 0.7238219895287958,
+            "w": 0.335,
+            "h": 0.11910994764397906
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 128,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 76,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 11,
+      "elapsedMs": 149.7931090000002,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.565285,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 90.624237,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 95.362526,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 123.5,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 76,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": -3,
+      "psm": 6,
+      "elapsedMs": 144.72775000000001,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.427368,
+          "box": {
+            "x": 0.05928571428571429,
+            "y": 0.1531413612565445,
+            "w": 0.11714285714285715,
+            "h": 0.10471204188481675
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91.942413,
+          "box": {
+            "x": 0.065,
+            "y": 0.43717277486910994,
+            "w": 0.29428571428571426,
+            "h": 0.12172774869109948
+          }
+        },
+        {
+          "text": "Passage 9",
+          "confidence": 95.362526,
+          "box": {
+            "x": 0.07642857142857143,
+            "y": 0.7329842931937173,
+            "w": 0.3357142857142857,
+            "h": 0.13089005235602094
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 118.40000000002328,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 11,
+      "elapsedMs": 145.86957400000028,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.166382,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 90.632263,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.60638449999999,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Tesseract.js 6 / LSTM best-int",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 118.5,
+      "raw": "Kim\n\nAB12345\n\nPassage 5\n",
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 94,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 91,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 95,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    },
+    {
+      "engine": "Native Tesseract / installed eng model",
+      "variant": "contrast",
+      "degrees": 3,
+      "psm": 6,
+      "elapsedMs": 158.78203699999995,
+      "lines": [
+        {
+          "text": "Kim",
+          "confidence": 96.630424,
+          "box": {
+            "x": 0.07857142857142857,
+            "y": 0.08115183246073299,
+            "w": 0.115,
+            "h": 0.10602094240837696
+          }
+        },
+        {
+          "text": "AB12345",
+          "confidence": 92.092934,
+          "box": {
+            "x": 0.06428571428571428,
+            "y": 0.38350785340314136,
+            "w": 0.29642857142857143,
+            "h": 0.11780104712041885
+          }
+        },
+        {
+          "text": "Passage 5",
+          "confidence": 96.60638449999999,
+          "box": {
+            "x": 0.060714285714285714,
+            "y": 0.6819371727748691,
+            "w": 0.335,
+            "h": 0.1400523560209424
+          }
+        }
+      ],
+      "boxCoordinates": "normalized rotated crop"
+    }
+  ]
+}

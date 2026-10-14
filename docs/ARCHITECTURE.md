@@ -15,12 +15,18 @@ less often. Original/contrast crops alternate. Workers and camera tracks stop
 when the camera is stopped or the page is hidden. No backend or image upload
 exists. In-memory session records are lost if the page is closed.
 
+`recognition.js` retains Tesseract as default and permits explicit `?engine=paddle`
+comparison. `paddle/worker.js` runs independent DB detection and CTC recognition
+off the main thread, returning per-glyph confidence. There is no silent fallback.
+See [Issue #2 limits](ISSUE-2.md).
+
 `fusion.js` matches lines by normalized vertical geometry inside the tracked ROI,
 then aligns characters with insertion/deletion-aware edit distance. Each aligned
 position accumulates weighted character votes. Disagreement, low support,
 crop-edge text and missing characters remain uncertain. There is no sample-ID
 dictionary and no forced completion of `TM01029` or any other expected string.
 Weighted agreement is explicitly shown as agreement, not calibrated confidence.
+Low mean weighted glyph support remains uncertain even if frames repeat.
 Three observations and weighted support are required before any character is
 shown without uncertainty. Closely spaced frames, low contrast and lost tracking
 do not add evidence.

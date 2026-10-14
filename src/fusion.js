@@ -1,6 +1,8 @@
 // Evidence is aligned by physical line geometry, then by character edit alignment.
 // No vocabulary correction: hidden characters must never be invented.
 export function align(a, b) {
+  a = [...a];
+  b = [...b];
   const d = Array.from({ length: a.length + 1 }, () =>
     Array(b.length + 1).fill(0),
   );
@@ -25,6 +27,12 @@ export function align(a, b) {
   return { pairs, distance: d[a.length][b.length] };
 }
 const winner = (votes) => [...votes.entries()].sort((a, b) => b[1] - a[1])[0];
+const initialVotes = (text, weight) => {
+  const votes = new Map([[text, weight]]);
+  votes.observations = 1;
+  votes.support = weight;
+  return votes;
+};
 export class Fusion {
   constructor() {
     this.reset();
@@ -66,6 +74,13 @@ export class Fusion {
         .filter(
           (t) =>
             !used.has(t.id) &&
+            Math.max(
+              0,
+              Math.min(t.box.x + t.box.w, line.box.x + line.box.w) -
+                Math.max(t.box.x, line.box.x),
+            ) /
+              Math.min(t.box.w, line.box.w) >
+              0.15 &&
             Math.abs(t.center - center) < Math.max(0.045, line.box.h * 0.65),
         )
         .sort(
@@ -75,19 +90,31 @@ export class Fusion {
         Math.min(0.98, Math.max(0.05, line.confidence / 100)) *
         quality *
         tracking;
+      const symbols = [...line.text];
+      const characterWeights = symbols.map((symbol, index) => {
+        const evidence = line.characters?.[index];
+        return evidence?.text === symbol && Number.isFinite(evidence.confidence)
+          ? Math.min(0.98, Math.max(0.01, evidence.confidence / 100)) *
+              quality *
+              tracking
+          : weight;
+      });
       if (!track) {
         track = {
           id: this.nextId++,
           center,
           box: line.box,
-          columns: [...line.text].map((c) => new Map([[c, weight]])),
+          columns: symbols.map((c, index) =>
+            initialVotes(c, characterWeights[index]),
+          ),
           observations: 1,
           conflicts: 0,
         };
         this.tracks.push(track);
       } else {
-        const current = track.columns.map((v) => winner(v)[0]).join("");
-        const { pairs, distance } = align(current, line.text);
+        // Retain blank columns during alignment: dropping them shifts all later glyph votes.
+        const current = track.columns.map((v) => winner(v)[0]);
+        const { pairs, distance } = align(current, symbols);
         if (distance / Math.max(current.length, line.text.length) > 0.65) {
           track.conflicts++;
           used.add(track.id);
@@ -100,8 +127,15 @@ export class Fusion {
             i === null
               ? new Map([["", track.observations * 0.35]])
               : track.columns[i];
-          const c = j === null ? "" : line.text[j];
-          v.set(c, (v.get(c) || 0) + weight);
+          if (i === null) {
+            v.observations = track.observations;
+            v.support = 0;
+          }
+          const c = j === null ? "" : symbols[j];
+          const glyphWeight = j === null ? weight : characterWeights[j];
+          v.set(c, (v.get(c) || 0) + glyphWeight);
+          v.observations++;
+          v.support += glyphWeight;
           columns.push(v);
         }
         track.columns = columns;
@@ -124,7 +158,9 @@ export class Fusion {
             text,
             agreement: weight / total,
             evidence: weight,
+            meanSupport: v.support / v.observations,
             uncertain:
+              v.support / v.observations < 0.7 ||
               weight / total < 0.8 ||
               weight < 2.2 ||
               t.observations < 3 ||

@@ -4,6 +4,10 @@ Experimental iPhone-first, on-device continuous label scanner. Review every line
 accuracy on real curved labels is **not yet verified**. See
 [OCR evidence](docs/BENCHMARK.md) and [workflow limits](docs/ARCHITECTURE.md).
 
+Issue #2 adds independent PaddleOCR behind experimental `?engine=paddle`, local
+models and per-line comparison metrics. It has not passed real-label/iPhone
+acceptance; see [status and private benchmark instructions](docs/ISSUE-2.md).
+
 ```sh
 cd /workspace/lablens
 npm ci --cache /tmp/lablens-npm

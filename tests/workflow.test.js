@@ -7,6 +7,38 @@ const line = (text, y = 0.2, confidence = 95, x = 0.1) => ({
   confidence,
   box: { x, y, w: 0.8, h: 0.06 },
 });
+test("high-confidence lines cannot hide a consistently weak individual glyph", () => {
+  const f = new Fusion();
+  for (let i = 0; i < 30; i++)
+    f.ingest(
+      [
+        {
+          ...line("AB1", 0.2, 96),
+          characters: [
+            { text: "A", confidence: 99 },
+            { text: "B", confidence: 99 },
+            { text: "1", confidence: 22 },
+          ],
+        },
+      ],
+      { time: i * 900 },
+    );
+  assert.equal(f.results()[0].characters[0].uncertain, false);
+  assert.equal(f.results()[0].characters[2].uncertain, true);
+  assert.equal(f.results()[0].uncertain, true);
+});
+test("same-height text at different horizontal positions never swaps physical tracks", () => {
+  const f = new Fusion();
+  const left = { ...line("A"), box: { x: 0.1, y: 0.2, w: 0.2, h: 0.06 } },
+    right = { ...line("B"), box: { x: 0.7, y: 0.2, w: 0.2, h: 0.06 } };
+  f.ingest([left, right], { time: 0 });
+  f.ingest([right, left], { time: 900 });
+  assert.deepEqual(
+    f.results().map((l) => l.text),
+    ["A", "B"],
+  );
+  assert.equal(f.results()[0].observations, 2);
+});
 test("physical lines fuse across frames without concatenation or forced sample vocabulary", () => {
   const f = new Fusion();
   for (let i = 0; i < 4; i++)
@@ -130,4 +162,14 @@ test("CSV supports more than three label lines and invalid confirmation cannot a
     lines: ["one", "two", "three", "four"],
   });
   assert.ok(s.csv().includes("Line 4"));
+});
+
+test("temporarily hidden glyph columns do not shift later votes when the glyph reappears", () => {
+  const f = new Fusion();
+  ["ABCD", "ACD", "ACD", "ACD", "ABCD", "ABCD", "ABCD", "ABCD"].forEach(
+    (text, i) => f.ingest([line(text)], { time: i * 900 }),
+  );
+  assert.equal(f.results()[0].text, "ABCD");
+  assert.equal(f.results()[0].characters.length, 4);
+  assert.equal(f.results()[0].characters[1].uncertain, true);
 });

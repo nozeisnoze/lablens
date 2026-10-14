@@ -13,12 +13,14 @@
     "benchmark": "node scripts/benchmark.mjs"
   },
   "dependencies": {
-    "tesseract.js": "6.0.1",
-    "@tesseract.js-data/eng": "1.0.0"
+    "@gutenye/ocr-models": "1.4.2",
+    "@tesseract.js-data/eng": "1.0.0",
+    "onnxruntime-web": "1.17.3",
+    "tesseract.js": "6.0.1"
   },
   "devDependencies": {
-    "vite": "6.4.1",
-    "@playwright/test": "1.56.1"
+    "@playwright/test": "1.56.1",
+    "vite": "6.4.1"
   },
   "engines": {
     "node": ">=20"

@@ -28,15 +28,23 @@ identifiers: keep them outside public Git. `reference` media, `benchmark-results
 and runtime-generated OCR assets are ignored. An installed Playwright Chromium
 can be used instead by omitting `CHROMIUM_PATH`.
 
-The runner executes browser Tesseract.js LSTM best-int and installed native
-Tesseract with its installed English model, both at PSM 11 and PSM 6, on original
+The runner executes independent browser PaddleOCR PP-OCRv4/ONNX WASM,
+browser Tesseract.js LSTM best-int and installed native Tesseract. The
+Tesseract baselines run at PSM 11 and PSM 6, on original
 and grayscale/contrast crops, at 0 and ±3 degrees. It writes actual per-line
 text, confidence, crop-relative bounding boxes, and elapsed recognition time.
 Original sensor/photo resolution is cropped before upscaling; scaling does not
 recover lost detail. Engine initialization is not included in recognition time.
 Rotation variants keep crop dimensions and can clip edges; inspect the images.
-These are two runtimes in the **same engine family**, not evidence of superiority
-over an independent modern engine.
+PaddleOCR uses a different detector/recognizer family. Its availability does not
+establish superiority on cryovials. Initialization is reported separately from
+recognition; neither measurement is iPhone latency.
+
+Add `--truth /private/visible-lines.json` for physical-line omissions, unmatched
+false positives, bounding-box overlap and character errors. Truth boxes use
+normalized source-image coordinates. Use `text: null` for ambiguous/hidden
+lines; their detection is scored without guessing characters. See the schema
+and real-image acceptance gates in [Issue #2 status](ISSUE-2.md).
 
 Before a release, transcribe only clearly visible glyphs, mark ambiguous/hidden
 positions separately, and compare each physical line, its bounding box, omissions,
@@ -50,10 +58,11 @@ ground-truth transcript or report an accuracy percentage without one.
 - Tesseract.js is genuinely available in Safari JS/WASM with same-origin English
   assets and no cloud processing. It is a baseline, not a demonstrated solution
   to this photo's curvature. GPU acceleration is not assumed.
-- PaddleOCR/ONNX recognition and detection are promising independent candidates.
-  A production integration needs vetted weights, licensing, local model hosting,
-  an actual iPhone memory/latency test, and testing on the same curved photo.
-  They are not installed, evaluated, or claimed to outperform the baseline here.
+- PaddleOCR PP-OCRv4 is integrated behind the explicit `?engine=paddle` comparison
+  flag. Pinned models/dictionary are SHA-256 checked and hosted locally. Models
+  retain Apache-2.0 licensing. Synthetic browser execution is verified, but real
+  curved-label accuracy and iPhone memory/latency remain unverified. It is not
+  the default engine.
 - Apple Vision/VisionKit cannot be invoked directly from Safari JavaScript.
 - Hosted OCR would transmit labels, potentially including patient identifiers,
   and introduce provider retention, access controls and per-request cost. It is
@@ -70,6 +79,8 @@ variants; native Tesseract produced them in 8/12, misreading `5` as `9` in four
 negative-rotation cases. Median recognition times were approximately 128 ms
 and 152 ms respectively on this cloud CPU, excluding engine startup. These
 figures must not be presented as real-label accuracy or iPhone performance.
+The newer [independent comparison](issue-2-synthetic.json) includes PaddleOCR
+and both Tesseract baselines; it is also synthetic only.
 An automated canvas video checks the continuous camera path, ROI exclusion,
 fusion, confirmation and reset. It is not a real rotating-vial video.
 

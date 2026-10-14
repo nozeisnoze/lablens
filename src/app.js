@@ -2,7 +2,8 @@ import "./style.css";
 import { Fusion } from "./fusion.js";
 import { Session } from "./session.js";
 import { Tracker } from "./tracker.js";
-import { makeOCR, cropLabel } from "./ocr.js";
+import { cropLabel } from "./ocr.js";
+import { makeRecognitionEngine } from "./recognition.js";
 const $ = (id) => document.getElementById(id),
   fusion = new Fusion(),
   session = new Session(),
@@ -214,7 +215,7 @@ $("start").onclick = async () => {
     $("stop").hidden = false;
     $("reacquire").hidden = false;
     status(`Loading local OCR · sensor ${frame.width} × ${frame.height}`);
-    const newOCR = await makeOCR();
+    const newOCR = await makeRecognitionEngine();
     if (epoch !== cameraEpoch || stopped) {
       await newOCR.terminate();
       return;

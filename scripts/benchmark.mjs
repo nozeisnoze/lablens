@@ -5,15 +5,24 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { createServer } from "vite";
 import { chromium } from "@playwright/test";
+import {
+  evaluateLines,
+  toSourceBox,
+  validateTruth,
+} from "../src/benchmark-metrics.js";
 const args = process.argv.slice(2),
   input = args[0];
 if (!input) {
   console.error(
-    "Usage: npm run benchmark -- IMAGE [--roi x,y,width,height] [--out benchmark-results/RUN]\nROI uses normalized source coordinates. Keep private images and results out of Git.",
+    "Usage: npm run benchmark -- IMAGE [--roi x,y,width,height] [--truth /private/visible-lines.json] [--out benchmark-results/RUN]\nROI uses normalized source coordinates. Keep private images and results out of Git.",
   );
   process.exit(2);
 }
 const option = (name) => args[args.indexOf(name) + 1];
+const truth = args.includes("--truth")
+  ? JSON.parse(await readFile(option("--truth"), "utf8"))
+  : null;
+if (truth) validateTruth(truth);
 const roi = args.includes("--roi")
   ? option("--roi").split(",").map(Number)
   : [0, 0, 1, 1];
@@ -47,6 +56,7 @@ try {
   const browserResults = await page.evaluate(
     async ({ data, roi }) => {
       const { makeOCR, cropLabel } = await import("/src/ocr.js");
+      const { makePaddleOCR } = await import("/src/paddle/engine.js");
       const image = new Image();
       image.src = "data:image/jpeg;base64," + data;
       await image.decode();
@@ -56,7 +66,12 @@ try {
         w: roi[2] * image.width,
         h: roi[3] * image.height,
       };
+      const started = performance.now();
       const ocr = await makeOCR();
+      const baselineInitializeMs = performance.now() - started;
+      const paddleStarted = performance.now();
+      const paddle = await makePaddleOCR();
+      const paddleInitializeMs = performance.now() - paddleStarted;
       const results = [];
       try {
         for (const variant of ["original", "contrast"])
@@ -85,11 +100,41 @@ try {
                 png: canvas.toDataURL("image/png").split(",")[1],
               });
             }
+        for (const variant of ["original", "contrast"])
+          for (const degrees of [0, -3, 3]) {
+            const crop = cropLabel(image, r, variant),
+              canvas = document.createElement("canvas");
+            canvas.width = crop.width;
+            canvas.height = crop.height;
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "white";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.translate(canvas.width / 2, canvas.height / 2);
+            ctx.rotate((degrees * Math.PI) / 180);
+            ctx.drawImage(crop, -crop.width / 2, -crop.height / 2);
+            const began = performance.now(),
+              result = await paddle.recognize(canvas);
+            results.push({
+              engine: result.engine,
+              variant,
+              degrees,
+              psm: null,
+              elapsedMs: performance.now() - began,
+              ...result,
+              boxCoordinates: "normalized rotated crop",
+              png: canvas.toDataURL("image/png").split(",")[1],
+            });
+          }
       } finally {
         await ocr.terminate();
+        await paddle.terminate();
       }
       return {
         source: { width: image.width, height: image.height, roi: r },
+        initialization: {
+          tesseractMs: baselineInitializeMs,
+          paddleMs: paddleInitializeMs,
+        },
         results,
       };
     },
@@ -101,6 +146,7 @@ try {
     const path = resolve(out, `variant-${i}.png`);
     await writeFile(path, Buffer.from(png, "base64"));
     results.push(run);
+    if (run.engine.startsWith("PaddleOCR")) continue;
     const started = performance.now();
     try {
       const { stdout } = await promisify(execFile)(
@@ -175,8 +221,11 @@ try {
     date: new Date().toISOString(),
     input: resolve(input),
     source: browserResults.source,
+    initialization: browserResults.initialization,
+    datasetKind: truth?.kind || "unclassified-no-ground-truth",
+    iPhoneLatency: "UNTESTED",
     limitations: [
-      "Both evaluated runtimes share the Tesseract engine family; this does not compare a stronger independent engine.",
+      "PaddleOCR PP-OCRv4 is independent of the Tesseract baselines; this comparison alone does not establish a stronger engine on real cryovials.",
       "Engine confidence is not an accuracy probability.",
       "No character accuracy score without a human-verified visible-only transcript.",
       "Boxes are normalized in each rotated ROI; variant images accompany results.",
@@ -184,6 +233,20 @@ try {
     ],
     results,
   };
+  for (const run of results)
+    if (run.lines) {
+      run.sourceLines = run.lines.map((line) => ({
+        ...line,
+        box: toSourceBox(
+          line.box,
+          report.source.roi,
+          run.degrees,
+          report.source.width,
+          report.source.height,
+        ),
+      }));
+      if (truth) run.metrics = evaluateLines(truth, run.sourceLines);
+    }
   await writeFile(
     resolve(out, "results.json"),
     JSON.stringify(report, null, 2),
